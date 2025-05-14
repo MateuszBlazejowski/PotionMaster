@@ -55,8 +55,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, settingsToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 3, 0, 3);
-            menuStrip1.Size = new Size(896, 30);
+            menuStrip1.Padding = new Padding(8, 3, 0, 3);
+            menuStrip1.Size = new Size(1008, 31);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
@@ -65,27 +65,27 @@
             // 
             fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newGameToolStripMenuItem, EndGameToolStripMenuItem, exitGameToolStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(62, 24);
+            fileToolStripMenuItem.Size = new Size(65, 25);
             fileToolStripMenuItem.Text = "Game";
             // 
             // newGameToolStripMenuItem
             // 
             newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            newGameToolStripMenuItem.Size = new Size(165, 26);
+            newGameToolStripMenuItem.Size = new Size(171, 26);
             newGameToolStripMenuItem.Text = "New Game";
             newGameToolStripMenuItem.Click += newGameToolStripMenuItem_Click;
             // 
             // EndGameToolStripMenuItem
             // 
             EndGameToolStripMenuItem.Name = "EndGameToolStripMenuItem";
-            EndGameToolStripMenuItem.Size = new Size(165, 26);
+            EndGameToolStripMenuItem.Size = new Size(171, 26);
             EndGameToolStripMenuItem.Text = "End Game";
             EndGameToolStripMenuItem.Click += EndGameToolStripMenuItem_Click;
             // 
             // exitGameToolStripMenuItem
             // 
             exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            exitGameToolStripMenuItem.Size = new Size(165, 26);
+            exitGameToolStripMenuItem.Size = new Size(171, 26);
             exitGameToolStripMenuItem.Text = "Exit ";
             exitGameToolStripMenuItem.Click += exitGameToolStripMenuItem_Click;
             // 
@@ -93,13 +93,13 @@
             // 
             settingsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openSettingsToolStripMenuItem });
             settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            settingsToolStripMenuItem.Size = new Size(76, 24);
+            settingsToolStripMenuItem.Size = new Size(80, 25);
             settingsToolStripMenuItem.Text = "Settings";
             // 
             // openSettingsToolStripMenuItem
             // 
             openSettingsToolStripMenuItem.Name = "openSettingsToolStripMenuItem";
-            openSettingsToolStripMenuItem.Size = new Size(185, 26);
+            openSettingsToolStripMenuItem.Size = new Size(192, 26);
             openSettingsToolStripMenuItem.Text = "Open Settings";
             openSettingsToolStripMenuItem.Click += openSettingsToolStripMenuItem_Click;
             // 
@@ -117,7 +117,7 @@
             vialsLayoutPanel.Name = "vialsLayoutPanel";
             vialsLayoutPanel.RowCount = 1;
             vialsLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            vialsLayoutPanel.Size = new Size(896, 490);
+            vialsLayoutPanel.Size = new Size(1008, 514);
             vialsLayoutPanel.TabIndex = 1;
             // 
             // backgroundTable
@@ -127,13 +127,13 @@
             backgroundTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             backgroundTable.Controls.Add(vialsLayoutPanel, 0, 0);
             backgroundTable.Controls.Add(controlPanel, 0, 1);
-            backgroundTable.Location = new Point(0, 32);
+            backgroundTable.Location = new Point(0, 34);
             backgroundTable.Margin = new Padding(3, 4, 3, 4);
             backgroundTable.Name = "backgroundTable";
             backgroundTable.RowCount = 2;
             backgroundTable.RowStyles.Add(new RowStyle(SizeType.Percent, 100.000008F));
-            backgroundTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 93F));
-            backgroundTable.Size = new Size(896, 583);
+            backgroundTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 98F));
+            backgroundTable.Size = new Size(1008, 612);
             backgroundTable.TabIndex = 2;
             backgroundTable.Paint += backgroundTable_Paint;
             // 
@@ -146,19 +146,19 @@
             controlPanel.Controls.Add(nextPuzzleButton);
             controlPanel.Controls.Add(undoButton);
             controlPanel.Dock = DockStyle.Fill;
-            controlPanel.Location = new Point(3, 494);
+            controlPanel.Location = new Point(3, 518);
             controlPanel.Margin = new Padding(3, 4, 3, 4);
             controlPanel.Name = "controlPanel";
-            controlPanel.Size = new Size(890, 85);
+            controlPanel.Size = new Size(1002, 90);
             controlPanel.TabIndex = 2;
             // 
             // leftUndosLabel
             // 
             leftUndosLabel.AutoSize = true;
             leftUndosLabel.BackColor = Color.Transparent;
-            leftUndosLabel.Location = new Point(35, 48);
+            leftUndosLabel.Location = new Point(39, 50);
             leftUndosLabel.Name = "leftUndosLabel";
-            leftUndosLabel.Size = new Size(49, 20);
+            leftUndosLabel.Size = new Size(52, 21);
             leftUndosLabel.TabIndex = 5;
             leftUndosLabel.Text = "Left: 3";
             leftUndosLabel.Click += label4_Click;
@@ -167,9 +167,9 @@
             // 
             currentScoreLabel.AutoSize = true;
             currentScoreLabel.BackColor = Color.Transparent;
-            currentScoreLabel.Location = new Point(160, 48);
+            currentScoreLabel.Location = new Point(180, 50);
             currentScoreLabel.Name = "currentScoreLabel";
-            currentScoreLabel.Size = new Size(105, 20);
+            currentScoreLabel.Size = new Size(113, 21);
             currentScoreLabel.TabIndex = 4;
             currentScoreLabel.Text = "Current Score: ";
             // 
@@ -177,9 +177,9 @@
             // 
             bestScoreLabel.AutoSize = true;
             bestScoreLabel.BackColor = Color.Transparent;
-            bestScoreLabel.Location = new Point(160, 15);
+            bestScoreLabel.Location = new Point(180, 16);
             bestScoreLabel.Name = "bestScoreLabel";
-            bestScoreLabel.Size = new Size(81, 20);
+            bestScoreLabel.Size = new Size(85, 21);
             bestScoreLabel.TabIndex = 3;
             bestScoreLabel.Text = "Best Score:";
             bestScoreLabel.Click += label2_Click;
@@ -189,9 +189,9 @@
             congratulationsLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             congratulationsLabel.AutoSize = true;
             congratulationsLabel.BackColor = Color.Transparent;
-            congratulationsLabel.Location = new Point(632, 15);
+            congratulationsLabel.Location = new Point(712, 17);
             congratulationsLabel.Name = "congratulationsLabel";
-            congratulationsLabel.Size = new Size(118, 20);
+            congratulationsLabel.Size = new Size(126, 21);
             congratulationsLabel.TabIndex = 2;
             congratulationsLabel.Text = "Congratulations!";
             congratulationsLabel.Click += congratulationsLabel_Click;
@@ -199,21 +199,22 @@
             // nextPuzzleButton
             // 
             nextPuzzleButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            nextPuzzleButton.Location = new Point(776, 4);
+            nextPuzzleButton.Location = new Point(874, 4);
             nextPuzzleButton.Margin = new Padding(3, 4, 3, 4);
             nextPuzzleButton.Name = "nextPuzzleButton";
-            nextPuzzleButton.Size = new Size(114, 40);
+            nextPuzzleButton.Size = new Size(128, 42);
             nextPuzzleButton.TabIndex = 1;
             nextPuzzleButton.Text = "Next Puzzle";
             nextPuzzleButton.UseVisualStyleBackColor = true;
             nextPuzzleButton.Click += nextPuzzleButton_Click;
+            nextPuzzleButton.Paint += nextPuzzleButton_Paint;
             // 
             // undoButton
             // 
             undoButton.Location = new Point(3, 4);
             undoButton.Margin = new Padding(3, 4, 3, 4);
             undoButton.Name = "undoButton";
-            undoButton.Size = new Size(114, 40);
+            undoButton.Size = new Size(128, 42);
             undoButton.TabIndex = 0;
             undoButton.Text = "Undo";
             undoButton.UseVisualStyleBackColor = true;
@@ -221,14 +222,14 @@
             // 
             // MainWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 615);
+            ClientSize = new Size(1008, 646);
             Controls.Add(backgroundTable);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);
-            MinimumSize = new Size(569, 384);
+            MinimumSize = new Size(638, 401);
             Name = "MainWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Potion Master";

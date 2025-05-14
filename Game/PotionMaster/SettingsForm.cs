@@ -60,9 +60,9 @@ namespace PotionMaster
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            if (vialsNumUpDown.Value < 4)
+            if (vialsNumUpDown.Value < 5)
             {
-                vialsNumUpDown.Value = 4;
+                vialsNumUpDown.Value = 5;
                 return;
             }
             if (vialsNumUpDown.Value > 25)

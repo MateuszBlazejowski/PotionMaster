@@ -53,6 +53,11 @@ public partial class MainWindow : Form
     private void LoadBestScore()
     {
         bestScoreEver = Properties.Settings.Default.BestScore;
+        if (bestScoreEver < 0)
+        {
+            Properties.Settings.Default.BestScore = 0;
+            bestScoreEver = 0;
+        }
         bestScoreLabel.Text = $"Best Score: {bestScoreEver}";
     }
     private void SaveBestScore()
@@ -67,9 +72,9 @@ public partial class MainWindow : Form
     private void LoadSettings()
     {
         vialsCount = Properties.Settings.Default.VialCount;
-        if (vialsCount < 4)
+        if (vialsCount < 5)
         {
-            vialsCount = 4;
+            vialsCount = 5;
             return;
         }
         if (vialsCount > 25)
@@ -443,9 +448,11 @@ public partial class MainWindow : Form
         {
             nextPuzzleButton.Enabled = true;
             congratulationsLabel.Visible = true;
+            undoButton.Enabled = false;
         }
         else
         {
+            undoButton.Enabled = true;
             nextPuzzleButton.Enabled = false;
             congratulationsLabel.Visible = false;
         }
@@ -483,6 +490,11 @@ public partial class MainWindow : Form
     }
 
     private void congratulationsLabel_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void nextPuzzleButton_Paint(object sender, PaintEventArgs e)
     {
 
     }

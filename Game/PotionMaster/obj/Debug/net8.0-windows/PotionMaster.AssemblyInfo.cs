@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PotionMaster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91c8b2b550141ec2da2430bd80cc182fd780bc5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PotionMaster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PotionMaster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

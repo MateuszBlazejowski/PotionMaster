@@ -52,7 +52,7 @@ namespace PotionMaster
 
     public static class Common
     {
-        public static readonly int MinVialsCount = 4;
+        public static readonly int MinVialsCount = 5;
         public static readonly int MaxVialsCount = 25;
         public static readonly int MinSegmentsCount = 2;
         public static readonly int MaxSegmentsCount = 10;

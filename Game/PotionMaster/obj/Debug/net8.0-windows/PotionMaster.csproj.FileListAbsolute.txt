@@ -55,3 +55,4 @@ C:\Users\matbl\Desktop\everything\Studia\semester4\PIGE\Windows_Forms\WinFormsGi
 C:\Users\matbl\Desktop\everything\Studia\semester4\PIGE\Windows_Forms\WinFormsGithubProject\Game\PotionMaster\obj\Debug\net8.0-windows\PotionMaster.pdb
 C:\Users\matbl\Desktop\everything\Studia\semester4\PIGE\Windows_Forms\WinFormsGithubProject\Game\PotionMaster\obj\Debug\net8.0-windows\PotionMaster.genruntimeconfig.cache
 C:\Users\matbl\Desktop\everything\Studia\semester4\PIGE\Windows_Forms\WinFormsGithubProject\Game\PotionMaster\obj\Debug\net8.0-windows\ref\PotionMaster.dll
+C:\Users\matbl\Desktop\everything\Studia\semester4\PIGE\Windows_Forms\WinFormsGithubProject\Game\PotionMaster\obj\Debug\net8.0-windows\PotionMaster.sourcelink.json
