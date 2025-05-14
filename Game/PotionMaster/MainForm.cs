@@ -75,39 +75,53 @@ public partial class MainWindow : Form
         if (vialsCount < 5)
         {
             vialsCount = 5;
-            return;
+            Properties.Settings.Default.VialCount = vialsCount;
         }
         if (vialsCount > 25)
         {
             vialsCount = 25;
-            return;
+            Properties.Settings.Default.VialCount = vialsCount;
         }
         segmentsCount = Properties.Settings.Default.MaxSegments;
 
         if (segmentsCount < 2)
         {
             segmentsCount = 2;
-            return;
+            Properties.Settings.Default.MaxSegments = segmentsCount;
         }
         if (segmentsCount > 10)
         {
             segmentsCount = 10;
-            return;
+            Properties.Settings.Default.MaxSegments = segmentsCount;
         }
+
         colorTheme = Properties.Settings.Default.ColorTheme;
         if (colorTheme != "Light" && colorTheme != "Dark")
         {
-            colorTheme = "Light"; // Default to Light if invalid
+            colorTheme = "Dark";
+            Properties.Settings.Default.ColorTheme = colorTheme;
         }
 
         this.difficulty = 1;
         string difficultySettings = Properties.Settings.Default.Difficulty;
         if (difficultySettings == "Easy")
+        {
             this.difficulty = 1;
-        if (difficultySettings == "Medium")
+            Properties.Settings.Default.Difficulty = "Easy";
+        }
+        else if (difficultySettings == "Medium")
+        {
             this.difficulty = 2;
-        if (difficultySettings == "Hard")
+        }
+        else if (difficultySettings == "Hard")
+        {
             this.difficulty = 3;
+        }
+        else
+        {
+            this.difficulty = 1;
+            Properties.Settings.Default.Difficulty = "Easy";
+        }
         startingEmptyVials = 4 - difficulty;
         undosLeft = 4 - difficulty;
         undosLeft = 4 - difficulty;

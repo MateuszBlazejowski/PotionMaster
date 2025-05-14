@@ -31,13 +31,27 @@ namespace PotionMaster
         }
         private void LoadSettings()
         {
-            // These values could come from settings file or a database
-            initialDifficulty = Properties.Settings.Default.Difficulty ?? "Medium"; // Default to "Medium" if not set
-            initialMaxSegments = Properties.Settings.Default.MaxSegments == 0 ? 5 : Properties.Settings.Default.MaxSegments; // Default to 5 if not set
-            initialVialCount = Properties.Settings.Default.VialCount == 0 ? 10 : Properties.Settings.Default.VialCount; // Default to 10 if not set
-            initialColorTheme = Properties.Settings.Default.ColorTheme ?? "Light"; // Default to "Light" if not set
+            initialDifficulty = Properties.Settings.Default.Difficulty; 
+            string difficultySettings = initialDifficulty;
+            if (difficultySettings == "Easy" || difficultySettings == "Medium" || difficultySettings == "Hard")
+            {
+                Properties.Settings.Default.Difficulty = "Easy";
+                initialDifficulty = "Easy";
+            }
 
-            // Set the initial values in the controls
+            initialMaxSegments = Properties.Settings.Default.MaxSegments; 
+            if(initialMaxSegments < 2 || initialMaxSegments>10) 
+                initialMaxSegments = 4;
+
+            initialVialCount = Properties.Settings.Default.VialCount; 
+            if (initialVialCount < 5 || initialVialCount > 25) 
+                initialVialCount = 10; 
+
+
+            initialColorTheme = Properties.Settings.Default.ColorTheme;
+            if (initialColorTheme != "Light" || initialColorTheme != "Dark")
+                initialColorTheme = "Dark"; 
+
             difficultyComboBox.SelectedItem = initialDifficulty;
             segmentsNumUpDown.Value = initialMaxSegments;
             vialsNumUpDown.Value = initialVialCount;
@@ -48,8 +62,8 @@ namespace PotionMaster
         {
             if (segmentsNumUpDown.Value < 2)
             {
-                segmentsNumUpDown.Value = 2; 
-                return; 
+                segmentsNumUpDown.Value = 2;
+                return;
             }
             if (segmentsNumUpDown.Value > 10)
             {

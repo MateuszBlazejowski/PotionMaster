@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matbl\\Desktop\\everything\\Studia\\semester4\\PIGE\\Windows_Forms\\WinFormsGithubProject\\Game\\PotionMaster\\PotionMaster.csproj": {}
+    "C:\\Users\\matbl\\Desktop\\Studia\\SEMESTER4\\PIGE\\windowforms\\project\\PotionMaster\\Game\\PotionMaster\\PotionMaster.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matbl\\Desktop\\everything\\Studia\\semester4\\PIGE\\Windows_Forms\\WinFormsGithubProject\\Game\\PotionMaster\\PotionMaster.csproj": {
+    "C:\\Users\\matbl\\Desktop\\Studia\\SEMESTER4\\PIGE\\windowforms\\project\\PotionMaster\\Game\\PotionMaster\\PotionMaster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matbl\\Desktop\\everything\\Studia\\semester4\\PIGE\\Windows_Forms\\WinFormsGithubProject\\Game\\PotionMaster\\PotionMaster.csproj",
+        "projectUniqueName": "C:\\Users\\matbl\\Desktop\\Studia\\SEMESTER4\\PIGE\\windowforms\\project\\PotionMaster\\Game\\PotionMaster\\PotionMaster.csproj",
         "projectName": "PotionMaster",
-        "projectPath": "C:\\Users\\matbl\\Desktop\\everything\\Studia\\semester4\\PIGE\\Windows_Forms\\WinFormsGithubProject\\Game\\PotionMaster\\PotionMaster.csproj",
+        "projectPath": "C:\\Users\\matbl\\Desktop\\Studia\\SEMESTER4\\PIGE\\windowforms\\project\\PotionMaster\\Game\\PotionMaster\\PotionMaster.csproj",
         "packagesPath": "C:\\Users\\matbl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matbl\\Desktop\\everything\\Studia\\semester4\\PIGE\\Windows_Forms\\WinFormsGithubProject\\Game\\PotionMaster\\obj\\",
+        "outputPath": "C:\\Users\\matbl\\Desktop\\Studia\\SEMESTER4\\PIGE\\windowforms\\project\\PotionMaster\\Game\\PotionMaster\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\matbl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
